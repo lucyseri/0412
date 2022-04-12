@@ -1,0 +1,70 @@
+/*header*/
+.header{
+  width: 100%;
+  height: auto;
+  background-color: #a9f3f3;
+}
+.header .inner-header{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.header .inner-header .nav{
+  flex: 0 1 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner-header .nav h1.logo{
+  flex: 0 0 120px;
+}
+.header .inner-header .nav h1.logo img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.header .inner-header .nav span.menu{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.header .inner-header .nav .gnb{
+  flex: 0 1 500px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.header .inner-header .nav .gnb ul{
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner-header .nav .gnb ul>li{
+  line-height: 40px;
+  color: #5c5c5c;
+  font-size: 16px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.header .inner-header .nav .gnb ul>li:hover{
+  background-color: #5c5c5c;
+  color: #a9f3f3;
+}
+.header .inner-header .nav .gnb ul>li>a{
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+}
+
+@media only screen and (max-width:767px) {
+  .header .inner-header .nav .gnb{
+    display: none;
+  }
+  .header .inner-header .nav span.menu{
+    font-size: 20px;
+    display: block;
+    width: 50px;
+    line-height: 70px;
+    text-align: center;
+    color: #5c5c5c;
+    visibility: visible;
+  }
+}

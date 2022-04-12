@@ -1,0 +1,39 @@
+/*footer*/
+.footer{
+  background-color: #5c5c5c;
+}
+
+.footer .inner-footer{
+  display: flex;
+  justify-content: center;
+}
+.footer .inner-footer .fcon{
+  flex: 0 1 1000px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.footer .inner-footer .fcon p:not(:last-child){
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 0 10px;
+  color: #fff;
+}
+.footer .inner-footer .fcon p:last-child{
+  font-size: 12px;
+  display: flex;
+  color: #fff;
+}
+.footer .inner-footer .fcon p:last-child span{
+  position: relative;
+  padding: 0 10px;
+  color: #fff;
+}
+.footer .inner-footer .fcon p:last-child span:not(:last-child)::after{
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #a9f3f3;
+}
+
